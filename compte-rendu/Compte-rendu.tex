@@ -2,7 +2,8 @@
 
 \usepackage[nottoc, notlof, notlot]{tocbibind}
 \usepackage[sort,nocompress]{cite}
-\usepackage[margin=0.8in]{geometry}
+%\usepackage[margin=0.8in]{geometry}
+\usepackage[hmargin=2.5cm,vmargin=2.5cm]{geometry}
 \usepackage[francais]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{algpseudocode}
@@ -31,22 +32,24 @@
 %%%%%%%%
 % [ ] Faire Résumé
 % [ ] Faire Introduction
-% [ ] ...
-% [ ] ...
-% [ ] ...
+% [ ] Faire la description des quatre stratégies
+% [ ] Faire la description générale des expériences
+% [ ] Faire le plan d'expérience pour un débris
+% [ ] Faire l'analyse des résultats pour l'expérience à un débris
+% [ ] Faire le plan d'expérience pour 100 débris uniformément répartis
+% [ ] Faire l'analyse des résultats pour l'expérience à 100 débris uniformément répartis
+% [ ] Faire le plan d'expérience pour 100 débris répartis en 10 clusters (écart-type 3)
+% [ ] Faire l'analyse des résultats pour l'expérience à 100 débris répartis en 10 clusters (écart-type 3)
 % [ ] Conclusion
 %%%%%%%% FINALISATION (à faire qu'à la fin)
 % [ ] Mettre en forme
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
 
 \begin{document}
 	
 \title{Intelligence artificielle bio-inspirée \\ Compte-rendu}
-\author{Adrien Castex\\Polytech Informatique\\et Master Recherche IA \and Alexandre Galdeano\\Polytech Informatique\\et Master Recherche IA}
-\date{05/02/2016}
+\author{Adrien Castex\\Polytech Informatique\\et Master Recherche IA\\\texttt{\small adrien.castex@etu.univ-lyon1.fr} \and Alexandre Galdeano\\Polytech Informatique\\et Master Recherche IA\\\texttt{\small alexandre.galdeano@etu.univ-lyon1.fr}}
+%\date{05/02/2016}
 \maketitle
 
 \begin{abstract}
@@ -54,13 +57,21 @@
 \end{abstract}
 
 \tableofcontents
-
+\thispagestyle{empty}
 \clearpage
 
-\begin{multicols}{2}
-	
-	\bibliographystyle{unsrt}
-	\bibliography{references/references}
-\end{multicols}
+\begin{multicols*}{2}
+\setcounter{page}{1}
+\input{body/introduction}
+\input{body/experiments}
+\input{body/conclusion}
+\newpage
+\begingroup
+\raggedright
+\sloppy
+\bibliographystyle{unsrt}
+\bibliography{references/references}
+\endgroup
+\end{multicols*}
 
 \end{document}
