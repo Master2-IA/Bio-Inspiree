@@ -14,12 +14,22 @@ data100TrRnd <- read.table("100_tr_rnd.csv", h=T, sep=";")
 data100TrRnd <- data100TrRnd[order(data100TrRnd$Brownian, data100TrRnd$Lévis),]
 attach(data100TrRnd)
 
+data1000Tr10Clts <- read.table("1000_tr_10_clts.csv", h=T, sep=";")
+data1000Tr10Clts <- data1000Tr10Clts[order(data1000Tr10Clts$Brownian, data1000Tr10Clts$Lévis),]
+attach(data1000Tr10Clts)
+
+data1000TrRnd <- read.table("1000_tr_rnd.csv", h=T, sep=";")
+data1000TrRnd <- data1000TrRnd[order(data1000TrRnd$Brownian, data1000TrRnd$Lévis),]
+attach(data1000TrRnd)
+
 
 
 ######################################################
 # Affichage pour chaque répartition
 ######################################################
 # Sélection de la répartition
+dataToDisplay <- data1000Tr10Clts
+dataToDisplay <- data1000TrRnd
 dataToDisplay <- data100Tr10Clts
 dataToDisplay <- data100TrRnd
 dataToDisplay <- data1Tr

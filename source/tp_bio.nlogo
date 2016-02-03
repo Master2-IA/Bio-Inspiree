@@ -202,6 +202,23 @@ to changeDirection
   right (random 360)
 end
 
+to executeAll
+  set strategy "Brownian"
+  execute
+  reset
+
+  set strategy "Equiprobable"
+  execute
+  reset
+
+  set strategy "Custom"
+  execute
+  reset
+
+  set strategy "Levy"
+  execute
+  reset
+end
 
 to execute
   let index 0
@@ -385,7 +402,7 @@ BUTTON
 13
 804
 66
-execute
+Execute
 execute
 NIL
 1
@@ -403,7 +420,7 @@ INPUTBOX
 1495
 73
 nbTrashTotal
-100
+1000
 1
 0
 Number
@@ -553,9 +570,9 @@ meanAverageSpeedTotal
 BUTTON
 629
 65
-804
+954
 99
-NIL
+Reset
 reset
 NIL
 1
@@ -587,7 +604,7 @@ nbRuns
 nbRuns
 1
 100
-50
+100
 1
 1
 NIL
@@ -614,6 +631,23 @@ displayResults
 0
 1
 -1000
+
+BUTTON
+802
+13
+954
+66
+Execute All Strategies
+executeAll
+NIL
+1
+T
+OBSERVER
+NIL
+A
+NIL
+NIL
+1
 
 @#$#@#$#@
 ## WHAT IS IT?
