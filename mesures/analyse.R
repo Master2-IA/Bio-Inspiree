@@ -49,7 +49,7 @@ mean(dataToDisplay$Lévis)
 ######################################################
 # Affichage pour chaque stratégie
 ######################################################
-plot(x=data1Trdata100Tr10Clts$Brownian, col=4, ylab="Ticks by trash")
+plot(x=data100Tr10Clts$Brownian, col=4, ylab="Ticks by trash")
 points(data100TrRnd$Brownian, col=1)
 points(data1Tr$Brownian, col=2)
 abline(h=mean(data100Tr10Clts$Brownian), col=4)
