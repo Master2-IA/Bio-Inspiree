@@ -207,40 +207,54 @@ to execute
   let index 0
   while [index < nbRuns]
   [
-  init
-  while [nbLeft > 0]
-  [
-    tick
-    ask robots
+    init
+    while [nbLeft > 0]
     [
-      ifelse strategy = "Brownian"
+      tick
+      ask robots
       [
-        brownianStrategy
-      ]
-      [
-        ifelse strategy = "Levy"
+        ifelse strategy = "Brownian"
         [
-          levystrategy
+          brownianStrategy
         ]
         [
-          ifelse strategy = "Equiprobable"
+          ifelse strategy = "Levy"
           [
-            equiprobableStrategy
+            levystrategy
           ]
           [
-            customStrategy
+            ifelse strategy = "Equiprobable"
+            [
+              equiprobableStrategy
+            ]
+            [
+              customStrategy
+            ]
           ]
         ]
+        set averageSpeed ticks / (nbCollected + 1)
       ]
-      set averageSpeed ticks / (nbCollected + 1)
+      set averageSpeedTotal ticks / (nbTrashTotal - nbLeft + 1)
     ]
-    set averageSpeedTotal ticks / (nbTrashTotal - nbLeft + 1)
+
+    ; Progressive average (loose in precision, O(1) en espace et en temps)
+    ;set meanAverageSpeedTotal (meanAverageSpeedTotal * nbExecution + averageSpeedTotal) / (nbExecution + 1)
+    ;set nbExecution nbExecution + 1
+
+    ; Real average (precise, O(n) en espace ; O(1) en temps)
+    set sumAverageSpeedTotal sumAverageSpeedTotal + averageSpeedTotal
+    set nbExecution nbExecution + 1
+    set meanAverageSpeedTotal sumAverageSpeedTotal / nbExecution
+
+    ; Display results
+    if displayResults
+    [ write averageSpeedTotal ]
+
+    set index index + 1
   ]
-  set sumAverageSpeedTotal sumAverageSpeedTotal + averageSpeedTotal
-  set nbExecution nbExecution + 1
-  set meanAverageSpeedTotal sumAverageSpeedTotal / nbExecution
-  set index index + 1
-  ]
+
+  if displayResults
+  [ print "" ]
 end
 
 to equiprobableStrategy
@@ -280,24 +294,27 @@ to-report calculateLocalPStop
 end
 
 to-report calculateNumberOfForward
-  let pValues [0. 0.5 0.6666666667 0.75 0.8 0.8333333333 0.8571428571 0.875 0.8888888889 0.9 0.9090909091 0.9166666667 0.9230769231 0.9285714286 0.9333333333 0.9375 0.9411764706 0.9444444444 0.9473684211 0.95 0.9523809524 0.9545454545 0.9565217391 0.9583333333 0.96 0.9615384615 0.962962963 0.9642857143 0.9655172414 0.9666666667 0.9677419355 0.96875 0.9696969697 0.9705882353 0.9714285714 0.9722222222 0.972972973 0.9736842105 0.9743589744 0.975 0.9756097561 0.9761904762 0.976744186 0.9772727273 0.9777777778 0.9782608696 0.9787234043 0.9791666667 0.9795918367 0.98 0.9803921569]
-  let nbForward 1
-  let mu 2
-  let pMax intProba nbForwardMax mu
-  let p random-float psumMax
-  let psum intProba nbForward mu
-  while [p >= psum]
-  [
-    set nbForward nbForward + 1
-    set psum pValues
-  ]
+;  let pValues [0. 0.5 0.6666666667 0.75 0.8 0.8333333333 0.8571428571 0.875 0.8888888889 0.9 0.9090909091 0.9166666667 0.9230769231 0.9285714286 0.9333333333 0.9375 0.9411764706 0.9444444444 0.9473684211 0.95 0.9523809524 0.9545454545 0.9565217391 0.9583333333 0.96 0.9615384615 0.962962963 0.9642857143 0.9655172414 0.9666666667 0.9677419355 0.96875 0.9696969697 0.9705882353 0.9714285714 0.9722222222 0.972972973 0.9736842105 0.9743589744 0.975 0.9756097561 0.9761904762 0.976744186 0.9772727273 0.9777777778 0.9782608696 0.9787234043 0.9791666667 0.9795918367 0.98 0.9803921569]
+;  let nbForward 1
+;  let mu 2
+;  let pMax intProba nbForwardMax mu
+;  let p random-float psumMax
+;  let psum intProba nbForward mu
+;  while [p >= psum]
+;  [
+;    set nbForward nbForward + 1
+;    set psum pValues
+;  ]
+;
+;  report 1 / ((lastStop + 1) ^ 1.5)
 
-  report 1 / ((lastStop + 1) ^ 1.5)
+  let p random-float 1
+  report exp (- ln (p) / mu)
 end
 
-to-report intProba [t mu]
-  report 1 / ((mu - 1) * (t + 1) ^ (mu - 1)) - 1 / (mu - 1)
-end
+;to-report intProba [t mu]
+;  report 1 / ((mu - 1) * (t + 1) ^ (mu - 1)) - 1 / (mu - 1)
+;end
 
 to customStrategy
   let p random-float 1
@@ -366,7 +383,7 @@ ticks
 BUTTON
 629
 13
-752
+804
 66
 execute
 execute
@@ -480,10 +497,10 @@ nbLeft
 14
 
 SWITCH
-975
-27
-1149
-60
+984
+67
+1158
+100
 constantEnvironment
 constantEnvironment
 1
@@ -502,20 +519,20 @@ averageSpeedTotal * nbRobot
 14
 
 CHOOSER
-1173
-82
-1312
-127
+983
+14
+1159
+59
 strategy
 strategy
 "Brownian" "Equiprobable" "Custom" "Levy"
 3
 
 SWITCH
-830
-27
-943
-60
+631
+205
+803
+238
 showPaths
 showPaths
 0
@@ -534,10 +551,10 @@ meanAverageSpeedTotal
 14
 
 BUTTON
-633
-83
-697
-117
+629
+65
+804
+99
 NIL
 reset
 NIL
@@ -562,19 +579,41 @@ nbExecution
 14
 
 SLIDER
-638
-140
-811
-173
+630
+113
+803
+146
 nbRuns
 nbRuns
 1
 100
-49
+50
 1
 1
 NIL
 HORIZONTAL
+
+INPUTBOX
+1688
+80
+1845
+140
+mu
+2
+1
+0
+Number
+
+SWITCH
+630
+158
+803
+191
+displayResults
+displayResults
+0
+1
+-1000
 
 @#$#@#$#@
 ## WHAT IS IT?
