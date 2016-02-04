@@ -39,7 +39,9 @@ La stratégie est comme suit :
 \subsection{Custom}
 Cette stratégie vient de l'idée suivante : plus cela fait de temps que l'on s'est arrêté plus on de chance de s'arrêter.
 En s'inspirant de la fonction de probabilité $P$ vue précédemment, nous avons
-défini la probabilité $P_{(\textbf{S})}(t) = 1 - (t + 1)^{-2}$ de faire (\textbf{S}) où $t$ est le nombre de \emph{ticks} depuis
+défini la fonction :
+$$P_{(\textbf{S})}(t) = 1 - (t + 1)^{-2}$$
+Celle-ci définie la probabilité faire l'action (\textbf{S}) où $t$ est le nombre de \emph{ticks} depuis
 le dernier (\textbf{S}).\\
 Pour chaque étape nous choisissons aléatoirement de faire l'un des actions  
 (\textbf{A}), (\textbf{D}) ou (\textbf{S}) avec respectivement une probabilité
