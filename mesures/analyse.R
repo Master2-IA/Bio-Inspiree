@@ -75,16 +75,84 @@ t.test(dataToDisplay$Brownian)
 t.test(dataToDisplay$Equiprobable)
 t.test(dataToDisplay$Custom)
 t.test(dataToDisplay$Lévis)
+sd(dataToDisplay$Brownian)
+sd(dataToDisplay$Equiprobable)
+sd(dataToDisplay$Custom)
+sd(dataToDisplay$Lévis)
+min(dataToDisplay$Brownian)
+min(dataToDisplay$Equiprobable)
+min(dataToDisplay$Custom)
+min(dataToDisplay$Lévis)
+max(dataToDisplay$Brownian)
+max(dataToDisplay$Equiprobable)
+max(dataToDisplay$Custom)
+max(dataToDisplay$Lévis)
+
+paste("min &", round(min(dataToDisplay$Brownian)), "&",
+      round(min(dataToDisplay$Equiprobable)), "&",
+      round(min(dataToDisplay$Custom)), "&",
+      round(min(dataToDisplay$Lévis)), "\\")
+
+paste("max &", round(max(dataToDisplay$Brownian)), "&",
+      round(max(dataToDisplay$Equiprobable)), "&",
+      round(max(dataToDisplay$Custom)), "&",
+      round(max(dataToDisplay$Lévis)), "\\")
+
 dataToDisplay <- data100TrRnd
 t.test(dataToDisplay$Brownian)
 t.test(dataToDisplay$Equiprobable)
 t.test(dataToDisplay$Custom)
 t.test(dataToDisplay$Lévis)
+sd(dataToDisplay$Brownian)
+sd(dataToDisplay$Equiprobable)
+sd(dataToDisplay$Custom)
+sd(dataToDisplay$Lévis)
+min(dataToDisplay$Brownian)
+min(dataToDisplay$Equiprobable)
+min(dataToDisplay$Custom)
+min(dataToDisplay$Lévis)
+max(dataToDisplay$Brownian)
+max(dataToDisplay$Equiprobable)
+max(dataToDisplay$Custom)
+max(dataToDisplay$Lévis)
+
+paste("min &", round(min(dataToDisplay$Brownian)), "&",
+      round(min(dataToDisplay$Equiprobable)), "&",
+      round(min(dataToDisplay$Custom)), "&",
+      round(min(dataToDisplay$Lévis)), "\\")
+
+paste("max &", round(max(dataToDisplay$Brownian)), "&",
+      round(max(dataToDisplay$Equiprobable)), "&",
+      round(max(dataToDisplay$Custom)), "&",
+      round(max(dataToDisplay$Lévis)), "\\")
+
 dataToDisplay <- data1Tr
 t.test(dataToDisplay$Brownian)
 t.test(dataToDisplay$Equiprobable)
 t.test(dataToDisplay$Custom)
 t.test(dataToDisplay$Lévis)
+sd(dataToDisplay$Brownian)
+sd(dataToDisplay$Equiprobable)
+sd(dataToDisplay$Custom)
+sd(dataToDisplay$Lévis)
+
+paste(round(min(dataToDisplay$Brownian)), "&",
+      round(min(dataToDisplay$Equiprobable)), "&",
+      round(min(dataToDisplay$Custom)), "&",
+      round(min(dataToDisplay$Lévis)), "\\")
+
+paste(round(max(dataToDisplay$Brownian)), "&",
+      round(max(dataToDisplay$Equiprobable)), "&",
+      round(max(dataToDisplay$Custom)), "&",
+      round(max(dataToDisplay$Lévis)), "\\")
+
+min(dataToDisplay$Equiprobable)
+min(dataToDisplay$Custom)
+min(dataToDisplay$Lévis)
+max(dataToDisplay$Brownian)
+max(dataToDisplay$Equiprobable)
+max(dataToDisplay$Custom)
+max(dataToDisplay$Lévis)
 
 ######################################################
 # Affichage pour chaque stratégie
