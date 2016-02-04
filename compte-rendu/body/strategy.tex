@@ -1,6 +1,34 @@
 %!TEX root = ../Compte-rendu.tex
 \section{Les quatre stratégies}
-\subsection{Brownien}
+\`{A} chaque étape (\emph{tick}), la tortue peut faire une des trois actions suivantes :
+\begin{itemize}
+\item Avancer d'une unité
+\item Changer aléatoirement de direction
+\item S'arrêter et ramasser un débris (\emph{trash}) s'il y en a un
+\end{itemize}
+Nous avons choisi de comparer les performances de 
+quatre stratégies différentes dans trois conditions différentes.
+
+\subsection{Brownian}
+La statégie la plus triviale correspond au mouvement brownien où les
+trois actions possibles sont faites à la suite en boucle dans cet ordre :
+\begin{enumerate}
+\item S'arrêter et ramasser un débris s'il y en a un
+\item Avancer d'une unité
+\item Changer aléatoirement de direction
+\end{enumerate}
+
 \subsection{\'{E}quiprobable}
-\subsection{Custom}
+Une deuxième solution triviale est de tirer une action aléatoire de manière
+équiprobable.
 \subsection{Lévy}
+Cette stratégie correspond à la stratégie décrite dans l'article 
+"\emph{Lévy flight search patterns of wandering albatrosses}" de 
+G.M. Viswanthan, V. Afanasyev, S. V. Buldyrev, E. J. Murphy, 
+P. A. Prince et H. E. Stanley. \\
+En ce basant sur l'approximation $P(t_i) \sim (t_i + 1)^{-\mu}$
+(qui défini la probabilité de voler au temps $t_i$) nous
+avons défini une fonction qui retourne aléatoirement
+un nombre de pas $n \in \llbracket 0; 50 \rrbracket$ à faire en suivant la densité de probabilité de $P$.
+
+\subsection{Custom}
