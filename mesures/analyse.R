@@ -64,6 +64,11 @@ mean(dataToDisplay$Equiprobable)
 mean(dataToDisplay$Custom)
 mean(dataToDisplay$Lévis)
 
+median(dataToDisplay$Brownian)
+median(dataToDisplay$Equiprobable)
+median(dataToDisplay$Custom)
+median(dataToDisplay$Lévis)
+
 
 
 ######################################################

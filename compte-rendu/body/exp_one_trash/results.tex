@@ -6,25 +6,25 @@
 	\begin{center}
 		\includegraphics[height=8cm]{diagrams/1Tr_all.pdf}
 		\caption{}
-		\label{fig:}
+		\label{fig:1Trash}
 	\end{center}
 \end{figure}
 
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[height=8cm]{diagrams/1Tr_brow_levis.pdf}
-		\caption{}
-		\label{fig:}
-	\end{center}
-\end{figure}
+Nous avons pour les différentes stratégies les médianes suivantes :
+
+\begin{tabular}{ | c | c | }
+	\hline
+	\multicolumn{2}{ | c | }{Médianes pour la 1 débris} \\
+	\hline
+	Brownian & 11981.75 \\
+	Equiprobable & 8939 \\
+	Custom & 8494 \\
+	Lévy & 5994.25 \\
+	\hline
+\end{tabular}
+
+Nous pouvons voir que les stratégies Equiprobable et Custom sont
+équivalentes lorsqu'il est question de trouver un débris unique.
 
 
-> mean(dataToDisplay$Brownian)
-[1] 14854.79
-> mean(dataToDisplay$Equiprobable)
-[1] 11505.08
-> mean(dataToDisplay$Custom)
-[1] 11380.33
-> mean(dataToDisplay$Lévis)
-[1] 8343.125
