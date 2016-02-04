@@ -2,9 +2,9 @@
 \section{Les quatre stratégies}
 \`{A} chaque étape (\emph{tick}), la tortue peut faire une des trois actions suivantes :
 \begin{itemize}
-\item Avancer d'une unité
-\item Changer aléatoirement de direction
-\item S'arrêter et ramasser un débris (\emph{trash}) s'il y en a un
+\item (\textbf{A}) Avancer d'une unité
+\item (\textbf{D}) Changer aléatoirement de direction
+\item (\textbf{S}) S'arrêter et ramasser un débris (\emph{trash}) s'il y en a un
 \end{itemize}
 Nous avons choisi de comparer les performances de 
 quatre stratégies différentes dans trois conditions différentes.
@@ -12,23 +12,36 @@ quatre stratégies différentes dans trois conditions différentes.
 \subsection{Brownian}
 La statégie la plus triviale correspond au mouvement brownien où les
 trois actions possibles sont faites à la suite en boucle dans cet ordre :
-\begin{enumerate}
-\item S'arrêter et ramasser un débris s'il y en a un
-\item Avancer d'une unité
-\item Changer aléatoirement de direction
-\end{enumerate}
+(\textbf{S}), (\textbf{A}) et enfin (\textbf{D}).
 
 \subsection{\'{E}quiprobable}
 Une deuxième solution triviale est de tirer une action aléatoire de manière
-équiprobable.
+équiprobable entre (\textbf{A}), (\textbf{D}) et (\textbf{S}).
 \subsection{Lévy}
 Cette stratégie correspond à la stratégie décrite dans l'article 
 "\emph{Lévy flight search patterns of wandering albatrosses}" de 
 G.M. Viswanthan, V. Afanasyev, S. V. Buldyrev, E. J. Murphy, 
 P. A. Prince et H. E. Stanley. \\
-En ce basant sur l'approximation $P(t_i) \sim (t_i + 1)^{-\mu}$
+En ce basant sur l'approximation $P(t_i) \sim (t_i + 1)^{-\mu}$ avec $\mu = 2$
 (qui défini la probabilité de voler au temps $t_i$) nous
 avons défini une fonction qui retourne aléatoirement
-un nombre de pas $n \in \llbracket 0; 50 \rrbracket$ à faire en suivant la densité de probabilité de $P$.
+un nombre de pas $n \in \llbracket 0; 50 \rrbracket$ à faire en suivant la densité de probabilité de $P$.\\
+La stratégie est comme suit :
+\begin{enumerate}
+\item S'il reste des pas à faire, (\textbf{A})
+\item Sinon 
+\begin{enumerate}
+\item on calcule le nombre de pas $n \in \llbracket 0; 50 \rrbracket$ à faire à partir de la prochaine étape
+\item on choisit de manière équiprobable entre (\textbf{D}) et (\textbf{S})
+\end{enumerate}
+\end{enumerate}
 
 \subsection{Custom}
+Cette stratégie vient de l'idée suivante : plus cela fait de temps que l'on s'est arrêté plus on de chance de s'arrêter.
+En s'inspirant de la fonction de probabilité $P$ vue précédemment, nous avons
+défini la probabilité $P_{(\textbf{S})}(t) = 1 - (t + 1)^{-2}$ de faire (\textbf{S}) où $t$ est le nombre de \emph{ticks} depuis
+le dernier (\textbf{S}).\\
+Pour chaque étape nous choisissons aléatoirement de faire l'un des actions  
+(\textbf{A}), (\textbf{D}) ou (\textbf{S}) avec respectivement une probabilité
+de $\cfrac{1 - P_{(\textbf{S})}(t)}{2}$, $\cfrac{1 - P_{(\textbf{S})}(t)}{2}$ et $P_{(\textbf{S})}(t)$. Si (\textbf{S}) est choisi
+alors $t$ est remis à zéro, sinon il est incrémenté.
