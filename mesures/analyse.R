@@ -70,6 +70,21 @@ median(dataToDisplay$Custom)
 median(dataToDisplay$Lévis)
 
 
+dataToDisplay <- data100Tr10Clts
+t.test(dataToDisplay$Brownian)
+t.test(dataToDisplay$Equiprobable)
+t.test(dataToDisplay$Custom)
+t.test(dataToDisplay$Lévis)
+dataToDisplay <- data100TrRnd
+t.test(dataToDisplay$Brownian)
+t.test(dataToDisplay$Equiprobable)
+t.test(dataToDisplay$Custom)
+t.test(dataToDisplay$Lévis)
+dataToDisplay <- data1Tr
+t.test(dataToDisplay$Brownian)
+t.test(dataToDisplay$Equiprobable)
+t.test(dataToDisplay$Custom)
+t.test(dataToDisplay$Lévis)
 
 ######################################################
 # Affichage pour chaque stratégie
