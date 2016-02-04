@@ -45,6 +45,16 @@ abline(h=mean(dataToDisplay$Equiprobable), col=1)
 abline(h=mean(dataToDisplay$Custom), col=2)
 abline(h=mean(dataToDisplay$Lévis), col=3)
 
+# Boxplot
+boxplot(x=data100Tr10Clts, names=c("Brownian", "Equipro.", "Custom", "Lévy"), ylab="Ticks by trash")
+title("100 runs - 100 trashes - 10 clusters - std dev. of 3")
+
+boxplot(x=data100TrRnd, names=c("Brownian", "Equipro.", "Custom", "Lévy"), ylab="Ticks by trash")
+title("100 runs - 100 trashes - uniform distribution")
+
+boxplot(x=data1Tr, names=c("Brownian", "Equipro.", "Custom", "Lévy"), ylab="Ticks by trash")
+title("100 runs - 1 trash")
+
 ######################################################
 # Compare quelle stratégie est la meilleure en fonction
 # de la répartition des déchets.
