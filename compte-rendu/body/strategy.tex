@@ -22,7 +22,7 @@ Cette stratégie correspond à la stratégie décrite dans l'article
 "\emph{Lévy flight search patterns of wandering albatrosses}" de 
 G.M. Viswanthan, V. Afanasyev, S. V. Buldyrev, E. J. Murphy, 
 P. A. Prince et H. E. Stanley. \\
-En ce basant sur l'approximation $P(t_i) \sim (t_i + 1)^{-\mu}$ avec $\mu = 2$
+En se basant sur l'approximation $P(t_i) \sim (t_i + 1)^{-\mu}$ avec $\mu = 2$
 (qui défini la probabilité de voler au temps $t_i$) nous
 avons défini une fonction qui retourne aléatoirement
 un nombre de pas $n \in \llbracket 0; 50 \rrbracket$ à faire en suivant la densité de probabilité de $P$.\\
@@ -43,7 +43,7 @@ défini la fonction :
 $$P_{(\textbf{S})}(t) = 1 - (t + 1)^{-2}$$
 Celle-ci définie la probabilité faire l'action (\textbf{S}) où $t$ est le nombre de \emph{ticks} depuis
 le dernier (\textbf{S}).\\
-Pour chaque étape nous choisissons aléatoirement de faire l'un des actions  
+Pour chaque étape nous choisissons aléatoirement de faire l'une des actions  
 (\textbf{A}), (\textbf{D}) ou (\textbf{S}) avec respectivement une probabilité
-de $\cfrac{1 - P_{(\textbf{S})}(t)}{2}$, $\cfrac{1 - P_{(\textbf{S})}(t)}{2}$ et $P_{(\textbf{S})}(t)$. Si (\textbf{S}) est choisi
+de $\cfrac{1 - P_{(\textbf{S})}(t)}{2}$, $\cfrac{1 - P_{(\textbf{S})}(t)}{2}$ et $P_{(\textbf{S})}(t)$. Si (\textbf{S}) est choisie
 alors $t$ est remis à zéro, sinon il est incrémenté.
