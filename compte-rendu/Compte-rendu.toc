@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {2}Caract\IeC {\'e}ristiques communes aux trois exp\IeC {\'e}riences}{1}
 \contentsline {subsection}{\numberline {2.1}Environnement}{1}
 \contentsline {subsection}{\numberline {2.2}Mesure utilis\IeC {\'e}e}{1}
-\contentsline {section}{\numberline {3}Un seul d\IeC {\'e}bris}{1}
+\contentsline {section}{\numberline {3}Un seul d\IeC {\'e}bris}{2}
 \contentsline {section}{\numberline {4}Cent d\IeC {\'e}bris uniform\IeC {\'e}ment r\IeC {\'e}partis}{2}
-\contentsline {section}{\numberline {5}Cent d\IeC {\'e}bris r\IeC {\'e}partis en dix clusters}{2}
+\contentsline {section}{\numberline {5}Cent d\IeC {\'e}bris r\IeC {\'e}partis en dix clusters}{3}
 \contentsline {section}{\numberline {6}Conclusion}{3}

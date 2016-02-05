@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.11)  1 FEB 2016 10:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.11)  5 FEB 2016 13:49
 entering extended mode
 **Compte-rendu
 
@@ -690,6 +690,14 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \colbreak@box=\box56
 \multicol@sort@counter=\count128
 )
+(C:\Users\alexandreg\AppData\Roaming\MiKTeX\2.9\tex\latex\stmaryrd\stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen143
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip50
@@ -701,11 +709,11 @@ Package: amstext 2000/06/29 v2.01
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks28
-\ex@=\dimen143
+\ex@=\dimen144
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen144
+\pmbraise@=\dimen145
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -722,7 +730,7 @@ LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box57
 \strutbox@=\box58
-\big@size=\dimen145
+\big@size=\dimen146
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count134
@@ -735,12 +743,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \column@=\count139
 \maxfields@=\count140
 \andhelp@=\toks30
-\eqnshift@=\dimen146
-\alignsep@=\dimen147
-\tagshift@=\dimen148
-\tagwidth@=\dimen149
-\totwidth@=\dimen150
-\lineht@=\dimen151
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
 \@envbody=\toks31
 \multlinegap=\skip51
 \multlinetaggap=\skip52
@@ -774,25 +782,25 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\Compte-rendu.
 aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 51.
-LaTeX Font Info:    Try loading font information for OT2+cmr on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT2/cmr/m/n on input line 50.
+LaTeX Font Info:    Try loading font information for OT2+cmr on input line 50.
 
 (C:\Users\alexandreg\AppData\Roaming\MiKTeX\2.9\tex\latex\cyrillic\ot2cmr.fd
 File: ot2cmr.fd 2001/08/11 v3.2c Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    ... okay on input line 50.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -828,78 +836,122 @@ LaTeX Font Info:    ... okay on input line 51.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 51.
-LaTeX Info: Redefining \dots on input line 51.
-LaTeX Info: Redefining \up on input line 51.
+LaTeX Info: Redefining \degres on input line 50.
+LaTeX Info: Redefining \dots on input line 50.
+LaTeX Info: Redefining \up on input line 50.
 \c@lstlisting=\count141
 (C:\Users\alexandreg\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count142
-\scratchdimen=\dimen152
+\scratchdimen=\dimen153
 \scratchbox=\box59
 \nofMPsegments=\count143
 \nofMParguments=\count144
 \everyMPshowfont=\toks33
 \MPscratchCnt=\count145
-\MPscratchDim=\dimen153
+\MPscratchDim=\dimen154
 \MPnumerator=\count146
 \makeMPintoPDFobject=\count147
 \everyMPtoPDFconversion=\toks34
 )
-LaTeX Font Info:    Try loading font information for T1+aett on input line 56.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+LaTeX Font Info:    Try loading font information for U+stmry on input line 55.
+ (C:\Users\alexandreg\AppData\Roaming\MiKTeX\2.9\tex\latex\stmaryrd\ustmry.fd)
+LaTeX Font Info:    Try loading font information for T1+aett on input line 55.
+("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/abstract
-.tex")
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\Compte-rendu.
 toc")
 \tf@toc=\write3
+
+("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\Compte-rendu.
+lof")
+\tf@lof=\write4
  [1
 
 {C:/Users/alexandreg/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/introduc
-tion.tex")
+("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/strategy
+.tex")
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/experime
-nts.tex"
+nts.tex" <diagrams/environnement.png, id=11, 747.79375pt x 747.79375pt>
+File: diagrams/environnement.png Graphic file (type png)
+
+<use diagrams/environnement.png>
+Package pdftex.def Info: diagrams/environnement.png used on input line 10.
+(pdftex.def)             Requested size: 224.33984pt x 224.33984pt.
+
+Overfull \hbox (1.71779pt too wide) in paragraph at lines 10--11
+ [] 
+ []
+
+[1
+
+ <D:/Documents/Cours/Semestre 9/M2 - IA/Bio-Inspiree/compte-rendu/diagrams/envi
+ronnement.png>]
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/exp_one_
 trash/description.tex")
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/exp_one_
-trash/results.tex")
+trash/results.tex" <diagrams/1Tr_all.pdf, id=26, 614.295pt x 794.97pt>
+File: diagrams/1Tr_all.pdf Graphic file (type pdf)
+
+<use diagrams/1Tr_all.pdf>
+Package pdftex.def Info: diagrams/1Tr_all.pdf used on input line 6.
+(pdftex.def)             Requested size: 219.86188pt x 284.52756pt.
+)
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/exp_100_
 trashes_uni/description.tex")
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/exp_100_
-trashes_uni/results.tex")
+trashes_uni/results.tex"
+<diagrams/100TrRnd_all.pdf, id=27, 614.295pt x 794.97pt>
+File: diagrams/100TrRnd_all.pdf Graphic file (type pdf)
+
+<use diagrams/100TrRnd_all.pdf>
+Package pdftex.def Info: diagrams/100TrRnd_all.pdf used on input line 5.
+(pdftex.def)             Requested size: 219.86188pt x 284.52756pt.
+ [2 <D:/Documents/Cours/Semestre 9/M2 - IA/Bio-Inspiree/compte-rendu/diagrams/1
+Tr_all.pdf> <D:/Documents/Cours/Semestre 9/M2 - IA/Bio-Inspiree/compte-rendu/di
+agrams/100TrRnd_all.pdf>])
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/exp_100_
 trashes_10_clus/description.tex")
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/exp_100_
-trashes_10_clus/results.tex"))
+trashes_10_clus/results.tex"
+<diagrams/100Tr10Clts_all.pdf, id=43, 614.295pt x 794.97pt>
+File: diagrams/100Tr10Clts_all.pdf Graphic file (type pdf)
+
+<use diagrams/100Tr10Clts_all.pdf>
+Package pdftex.def Info: diagrams/100Tr10Clts_all.pdf used on input line 6.
+(pdftex.def)             Requested size: 219.86188pt x 284.52756pt.
+))
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\body/conclusi
-on.tex") [1
-
-]
-No file Compte-rendu.bbl.
-
+on.tex") [3 <D:/Documents/Cours/Semestre 9/M2 - IA/Bio-Inspiree/compte-rendu/di
+agrams/100Tr10Clts_all.pdf>]
 ("D:\Documents\Cours\Semestre 9\M2 - IA\Bio-Inspiree\compte-rendu\Compte-rendu.
 aux") ) 
 Here is how much of TeX's memory you used:
- 6911 strings out of 493921
- 93388 string characters out of 3147267
- 167936 words of memory out of 3000000
- 9993 multiletter control sequences out of 15000+200000
- 35310 words of font info for 78 fonts, out of 3000000 for 9000
+ 7118 strings out of 493921
+ 96362 string characters out of 3147267
+ 174390 words of memory out of 3000000
+ 10176 multiletter control sequences out of 15000+200000
+ 44094 words of font info for 85 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 35i,7n,35p,280b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,10n,35p,280b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmtt10.pfb>
-Output written on Compte-rendu.pdf (2 pages, 92512 bytes).
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/alexandreg/AppData/Roam
+ing/MiKTeX/2.9/fonts/type1/public/hoekwater/stmary10.pfb>
+Output written on Compte-rendu.pdf (4 pages, 365279 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
